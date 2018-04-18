@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30932A85206B455100E013A4 /* OpenWeatherMapApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30932A84206B455100E013A4 /* OpenWeatherMapApi.swift */; };
+		30932A87206B5FE100E013A4 /* Charts+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30932A86206B5FE100E013A4 /* Charts+ext.swift */; };
+		30932A8A206DE34D00E013A4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30932A89206DE34D00E013A4 /* Weather.swift */; };
 		30ED3DBB206698E500FFBFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED3DBA206698E500FFBFDA /* AppDelegate.swift */; };
 		30ED3DBD206698E500FFBFDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED3DBC206698E500FFBFDA /* ViewController.swift */; };
 		30ED3DC0206698E500FFBFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED3DBE206698E500FFBFDA /* Main.storyboard */; };
 		30ED3DC2206698E500FFBFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30ED3DC1206698E500FFBFDA /* Assets.xcassets */; };
 		30ED3DC5206698E500FFBFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED3DC3206698E500FFBFDA /* LaunchScreen.storyboard */; };
+		97F009E8E6354B5967E05852 /* Pods_Ollie_Whats_The_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5047373AD6ED84E2C0466D /* Pods_Ollie_Whats_The_Weather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		197A4141FC4180FD2AC75B5C /* Pods-Ollie Whats The Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ollie Whats The Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ollie Whats The Weather/Pods-Ollie Whats The Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		30932A84206B455100E013A4 /* OpenWeatherMapApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapApi.swift; sourceTree = "<group>"; };
+		30932A86206B5FE100E013A4 /* Charts+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charts+ext.swift"; sourceTree = "<group>"; };
+		30932A89206DE34D00E013A4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		30ED3DB7206698E500FFBFDA /* Ollie Whats The Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ollie Whats The Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30ED3DBA206698E500FFBFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30ED3DBC206698E500FFBFDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,8 @@
 		30ED3DC1206698E500FFBFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30ED3DC4206698E500FFBFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30ED3DC6206698E600FFBFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6696EC960601904430E7EA52 /* Pods-Ollie Whats The Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ollie Whats The Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ollie Whats The Weather/Pods-Ollie Whats The Weather.release.xcconfig"; sourceTree = "<group>"; };
+		BC5047373AD6ED84E2C0466D /* Pods_Ollie_Whats_The_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ollie_Whats_The_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F009E8E6354B5967E05852 /* Pods_Ollie_Whats_The_Weather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				30ED3DB9206698E500FFBFDA /* Ollie Whats The Weather */,
 				30ED3DB8206698E500FFBFDA /* Products */,
+				E5DB33B2E0DB3EF34FC4CEC3 /* Pods */,
+				4A91AF53C340FA9527028661 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +73,28 @@
 				30ED3DC1206698E500FFBFDA /* Assets.xcassets */,
 				30ED3DC3206698E500FFBFDA /* LaunchScreen.storyboard */,
 				30ED3DC6206698E600FFBFDA /* Info.plist */,
+				30932A84206B455100E013A4 /* OpenWeatherMapApi.swift */,
+				30932A86206B5FE100E013A4 /* Charts+ext.swift */,
+				30932A89206DE34D00E013A4 /* Weather.swift */,
 			);
 			path = "Ollie Whats The Weather";
+			sourceTree = "<group>";
+		};
+		4A91AF53C340FA9527028661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC5047373AD6ED84E2C0466D /* Pods_Ollie_Whats_The_Weather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5DB33B2E0DB3EF34FC4CEC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				197A4141FC4180FD2AC75B5C /* Pods-Ollie Whats The Weather.debug.xcconfig */,
+				6696EC960601904430E7EA52 /* Pods-Ollie Whats The Weather.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30ED3DC9206698E600FFBFDA /* Build configuration list for PBXNativeTarget "Ollie Whats The Weather" */;
 			buildPhases = (
+				BCF9840DA37BF496B4245DA2 /* [CP] Check Pods Manifest.lock */,
 				30ED3DB3206698E500FFBFDA /* Sources */,
 				30ED3DB4206698E500FFBFDA /* Frameworks */,
 				30ED3DB5206698E500FFBFDA /* Resources */,
+				4B81E4A72C30960FB595717E /* [CP] Embed Pods Frameworks */,
+				A2F067F50872047E7933CCB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,7 +127,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = RLabs;
 				TargetAttributes = {
 					30ED3DB6206698E500FFBFDA = {
@@ -131,13 +167,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B81E4A72C30960FB595717E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ollie Whats The Weather/Pods-Ollie Whats The Weather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ollie Whats The Weather/Pods-Ollie Whats The Weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2F067F50872047E7933CCB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ollie Whats The Weather/Pods-Ollie Whats The Weather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF9840DA37BF496B4245DA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ollie Whats The Weather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30ED3DB3206698E500FFBFDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30932A87206B5FE100E013A4 /* Charts+ext.swift in Sources */,
+				30932A85206B455100E013A4 /* OpenWeatherMapApi.swift in Sources */,
 				30ED3DBD206698E500FFBFDA /* ViewController.swift in Sources */,
 				30ED3DBB206698E500FFBFDA /* AppDelegate.swift in Sources */,
+				30932A8A206DE34D00E013A4 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +274,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +282,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +333,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +341,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -272,6 +373,7 @@
 		};
 		30ED3DCA206698E600FFBFDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197A4141FC4180FD2AC75B5C /* Pods-Ollie Whats The Weather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +389,7 @@
 		};
 		30ED3DCB206698E600FFBFDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6696EC960601904430E7EA52 /* Pods-Ollie Whats The Weather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
