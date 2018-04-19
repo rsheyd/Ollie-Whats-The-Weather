@@ -1,7 +1,7 @@
 # Ollie-Whats-The-Weather
 Swift iOS weather/what to wear dashboard app.
 
-Requires a Wunderground API key, and currently only configured for iPad air screen size.
+Requires a Wunderground API key.
 
 Retrieves new weather data every 30 minutes and has a working clock.
 
