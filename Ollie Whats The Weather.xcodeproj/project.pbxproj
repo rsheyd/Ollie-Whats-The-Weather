@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30932A85206B455100E013A4 /* OpenWeatherMapApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30932A84206B455100E013A4 /* OpenWeatherMapApi.swift */; };
+		307249292088EE7B00303FB8 /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 307249282088EE7B00303FB8 /* api.plist */; };
 		30932A87206B5FE100E013A4 /* Charts+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30932A86206B5FE100E013A4 /* Charts+ext.swift */; };
 		30932A8A206DE34D00E013A4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30932A89206DE34D00E013A4 /* Weather.swift */; };
 		30ED3DBB206698E500FFBFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED3DBA206698E500FFBFDA /* AppDelegate.swift */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		197A4141FC4180FD2AC75B5C /* Pods-Ollie Whats The Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ollie Whats The Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ollie Whats The Weather/Pods-Ollie Whats The Weather.debug.xcconfig"; sourceTree = "<group>"; };
-		30932A84206B455100E013A4 /* OpenWeatherMapApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapApi.swift; sourceTree = "<group>"; };
+		307249282088EE7B00303FB8 /* api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = api.plist; sourceTree = "<group>"; };
 		30932A86206B5FE100E013A4 /* Charts+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charts+ext.swift"; sourceTree = "<group>"; };
 		30932A89206DE34D00E013A4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		30ED3DB7206698E500FFBFDA /* Ollie Whats The Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ollie Whats The Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,9 +73,9 @@
 				30ED3DC1206698E500FFBFDA /* Assets.xcassets */,
 				30ED3DC3206698E500FFBFDA /* LaunchScreen.storyboard */,
 				30ED3DC6206698E600FFBFDA /* Info.plist */,
-				30932A84206B455100E013A4 /* OpenWeatherMapApi.swift */,
 				30932A86206B5FE100E013A4 /* Charts+ext.swift */,
 				30932A89206DE34D00E013A4 /* Weather.swift */,
+				307249282088EE7B00303FB8 /* api.plist */,
 			);
 			path = "Ollie Whats The Weather";
 			sourceTree = "<group>";
@@ -160,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30ED3DC5206698E500FFBFDA /* LaunchScreen.storyboard in Resources */,
+				307249292088EE7B00303FB8 /* api.plist in Resources */,
 				30ED3DC2206698E500FFBFDA /* Assets.xcassets in Resources */,
 				30ED3DC0206698E500FFBFDA /* Main.storyboard in Resources */,
 			);
@@ -231,7 +232,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30932A87206B5FE100E013A4 /* Charts+ext.swift in Sources */,
-				30932A85206B455100E013A4 /* OpenWeatherMapApi.swift in Sources */,
 				30ED3DBD206698E500FFBFDA /* ViewController.swift in Sources */,
 				30ED3DBB206698E500FFBFDA /* AppDelegate.swift in Sources */,
 				30932A8A206DE34D00E013A4 /* Weather.swift in Sources */,
