@@ -5,8 +5,6 @@ Requires a Wunderground API key, and currently only configured for iPad air scre
 
 Retrieves new weather data every 30 minutes and has a working clock.
 
-Date field doesn't work yet.
-
 <img src="https://i.imgur.com/i1PUo5l.png" width="450">
 
 Clothing temperature ranges (based on midpoint between high/low temp for the day, or current temp if that's lower than today's low):
