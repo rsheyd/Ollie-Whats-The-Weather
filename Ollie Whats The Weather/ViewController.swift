@@ -18,8 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var todayHotTempLbl: UILabel!
     @IBOutlet weak var todayColdTempLbl: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var hourlyLineChart: LineChartView!
     let formatter = DateFormatter()
+    let dateFormatter = DateFormatter()
     var clockTimer = Timer()
     var tempRefreshTimer = Timer()
     
@@ -40,9 +42,10 @@ class ViewController: UIViewController {
     }
     
     func runTempRefreshTimer() {
-        updateTemps()
+        dateFormatter.dateFormat = "EEEE, MMMM dd"
+        updateTempsAndDate()
         // update temperature every 30 minutes
-        tempRefreshTimer = Timer.scheduledTimer(timeInterval: 1800, target: self, selector: (#selector(ViewController.updateTemps)), userInfo: nil, repeats: true)
+        tempRefreshTimer = Timer.scheduledTimer(timeInterval: 1800, target: self, selector: (#selector(ViewController.updateTempsAndDate)), userInfo: nil, repeats: true)
     }
     
     func runClockTimer() {
@@ -82,7 +85,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @objc func updateTemps() {
+    @objc func updateTempsAndDate() {
         Weather.shared.getCurrentTemp() { currentTemp, condition in
             self.currentTempLbl.text = currentTemp
             self.condition.text = condition
@@ -106,6 +109,9 @@ class ViewController: UIViewController {
             }
             self.setHourlyChart(hours: hours, temps: temps)
         }
+        
+        let currentDate = Date()
+        dateLabel.text = dateFormatter.string(from: currentDate)
     }
     
     func recommendClothing(_ current: String, _ low: String, _ high: String) {
@@ -139,7 +145,7 @@ class ViewController: UIViewController {
     
     @IBAction func changeApiKeyPressed(_ sender: Any) {
         self.present(Weather.shared.changeApiKey(), animated: true) {
-            self.updateTemps()
+            self.updateTempsAndDate()
         }
     }
 }
