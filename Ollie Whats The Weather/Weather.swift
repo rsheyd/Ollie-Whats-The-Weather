@@ -30,9 +30,15 @@ class Weather {
     }
     
     func loadApiKey() {
-        if let apiKey = UserDefaults.standard.string(forKey: "apiKey"), !apiKey.isEmpty {
-            self.apiKey = apiKey
+        if let path = Bundle.main.path(forResource: "api", ofType: "plist"),
+            let contents = NSDictionary(contentsOfFile: path),
+            let key = contents["wundergroundDevApiKey"] as? String {
+            apiKey = key
         }
+        
+//        if let apiKey = UserDefaults.standard.string(forKey: "apiKey"), !apiKey.isEmpty {
+//            self.apiKey = apiKey
+//        }
     }
     
     func changeApiKey() -> UIAlertController {
