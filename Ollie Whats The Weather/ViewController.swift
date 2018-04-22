@@ -137,7 +137,7 @@ class ViewController: UIViewController {
         case 40..<50: wear = "Medium coat + 1-2 thin layers"
         case 30..<40: wear = "Medium coat, light hat, light gloves, light scarf"
         case 20..<30: wear = "Heavy coat, hat, gloves, scarf"
-        case -100..<20: wear = "It is way cold, consider leggings and shit"
+        case -100..<20: wear = "It is way cold, consider leggings"
         default: wear = "I did not take into account this temperature..."
         }
         whatToWear.text = wear
